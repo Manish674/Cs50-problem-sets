@@ -25,19 +25,19 @@ int main(int argc,  string argv[])
 
     for(int i = 0; i < len; i++)
     {
-        if (isalpha(plaintext[i]))
+        if (isalpha(plainchar))
         {
-            if (islower(plaintext[i]))
+            if (islower(plainchar))
             {
-                int x = (int)plaintext[i] - 97;
+                int x = (int)plainchar - 97;
                 int y = (x + key)%26;
                 int z = (y + 97);
                 printf("%c", z);
             }
 
-            else if(isupper(plaintext[i]))
+            else if(isupper(plainchar))
             {
-                int a = (int)plaintext[i] - 65;
+                int a = (int)plainchar - 65;
                 int b = (a + key)%26;
                 int c = (b + 65);
                 printf("%c", c);
@@ -45,7 +45,7 @@ int main(int argc,  string argv[])
         }
         else
         {
-            printf("%c", plaintext[i]);
+            printf("%c", plainchar);
         }
     }
     printf("\n");
