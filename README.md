@@ -5,6 +5,12 @@ Pending
 Requirement
 1) cs50 header file
 2) clang
+3) python3
+4) pip
+
+For python3 problem set
+  1) Install pip
+  2) python3 -m pip install cs50
 
 Use 
 1) change directories where files are
